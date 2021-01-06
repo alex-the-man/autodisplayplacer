@@ -36,6 +36,18 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="File" id="Aj2-Ce-HVW">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="File" id="aGy-YC-s28">
+                                    <items>
+                                        <menuItem title="Close" keyEquivalent="w" id="3DE-se-aTU">
+                                            <connections>
+                                                <action selector="performClose:" target="Ady-hI-5gd" id="3gi-MV-DOX"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                             <menuItem title="Edit" id="3ld-JK-5wL">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Edit" id="Lf6-kc-mys">
@@ -341,7 +353,7 @@
                                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <size key="minSize" width="477" height="104"/>
-                                                            <size key="maxSize" width="477" height="10000000"/>
+                                                            <size key="maxSize" width="494" height="10000000"/>
                                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                             <connections>
                                                                 <binding destination="vSQ-Cw-644" name="value" keyPath="values.cmd" id="ZlX-2G-WMV">
@@ -419,7 +431,7 @@
                                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <size key="minSize" width="477" height="405"/>
-                                                            <size key="maxSize" width="477" height="10000000"/>
+                                                            <size key="maxSize" width="494" height="10000000"/>
                                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         </textView>
                                                     </subviews>
