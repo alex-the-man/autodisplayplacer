@@ -26,6 +26,8 @@
 	<string>Main</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>LSMultipleInstancesProhibited</key>
+	<true/>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
