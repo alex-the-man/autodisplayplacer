@@ -96,14 +96,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 func executeCommand(_ command: String) -> String {
+    let env = ProcessInfo.processInfo.environment
+    let currentPath = env["PATH"] ?? ""
+    let executablePath = Bundle.main.bundlePath + "/Contents/MacOS" // Add embedded displayplacer to the path
+    let path = executablePath + ":" + currentPath
+
     let stdouterr = Pipe()
     let task = Process()
     task.launchPath = "/bin/bash" // Use bash to parse the command line.
+    task.environment = env
+    task.environment!["PATH"] = path
     task.arguments = ["-c", command]
     task.standardOutput = stdouterr
     task.standardError = stdouterr
     task.launch()
-    
+
     // TODO Change it to timed wait.
     task.waitUntilExit()
     
