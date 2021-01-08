@@ -49,13 +49,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7918012325A7F86E00CACF80 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7918014225A7FE9000CACF80 /* Embedded Binaries */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +63,6 @@
 				7918014225A7FE9000CACF80 /* Embedded Binaries */,
 				7968E7C025A4573C00F493E5 /* autodisplayplacer */,
 				7968E7BF25A4573C00F493E5 /* Products */,
-				7918012325A7F86E00CACF80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
