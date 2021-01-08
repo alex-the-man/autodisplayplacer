@@ -27,6 +27,10 @@ class PreferencesViewController: NSViewController {
         self.commandTextView.isAutomaticTextReplacementEnabled = false;
     }
     
+    override func viewWillAppear() {
+        outputTextView.string = ""
+    }
+    
     override func viewDidDisappear() {
         NSUserDefaultsController.shared.revert(nil)
     }
@@ -35,11 +39,13 @@ class PreferencesViewController: NSViewController {
         self.progressIndicator.startAnimation(nil)
         let cmd = self.commandTextView.string
         self.outputTextView.string = ""
+        self.executeButton.isEnabled = false
         DispatchQueue.global(qos: .background).async {
             let output = executeCommand(cmd)
             DispatchQueue.main.async {
                 self.outputTextView.string = output.isEmpty ? "<no output>" : output
                 self.progressIndicator.stopAnimation(nil)
+                self.executeButton.isEnabled = true
             }
         }
     }
