@@ -33,7 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         userDefaults.register(
             defaults: [
                 ConfigKeys.executeCmdOnStart: true,
-                ConfigKeys.cmd: "say \"Screen change detected\"",
+                ConfigKeys.cmd: "displayplacer list",
             ]
         )
     }
